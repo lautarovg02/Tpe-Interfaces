@@ -2,6 +2,10 @@
     font-family:'Nunito Sans';
     font-size: 20px;
 }
+header{
+    width: 97%;
+    margin: auto;
+}
 #imgLogo{
     width: 200px;
 }
@@ -23,4 +27,27 @@
 }
 .width-spaced{
     width: 15%;
+}
+.selected{
+    border-bottom: solid 3px white !important;
+}
+footer{
+    width: 100%;
+    background-color: #A81E1E;
+    color: white;
+}
+.f-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#icons{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.icon-apps{
+    width: 50px;
+    height: 50px;
 }
