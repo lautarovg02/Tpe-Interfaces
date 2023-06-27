@@ -16,15 +16,27 @@ header{
 #bg-red{
     background-color: #A81E1E !important;
 }
-.btn-outline-red{
+.btn-outline-white{
     border: solid 1px white !important;
     color: white !important;
 }
-.btn-outline-red:hover{
+.btn-outline-white:hover{
     border: solid 1px #A81E1E !important;
     color: #A81E1E !important;
     background-color: white;
 }
+
+.btn-outline-red{
+    border: solid 1px #A81E1E !important;
+    color: #A81E1E !important;
+}
+.btn-outline-red:hover{
+    border: solid 1px white !important;
+    color: white !important;
+    background-color: #A81E1E;
+}
+
+
 .width-spaced{
     width: 15%;
 }
@@ -50,4 +62,16 @@ footer{
 .icon-apps{
     width: 50px;
     height: 50px;
+}
+
+
+.art-main{
+    width: 97%;
+    display: flex;
+}
+.img-art-main{
+    width: 30%;
+}
+.desc-art-main{
+    width: 70%;
 }
