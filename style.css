@@ -1,0 +1,26 @@
+*{
+    font-family:'Nunito Sans';
+    font-size: 20px;
+}
+#imgLogo{
+    width: 200px;
+}
+#backLogo{
+    background-color: white;
+    border-radius: 15px;
+}
+#bg-red{
+    background-color: #A81E1E !important;
+}
+.btn-outline-red{
+    border: solid 1px white !important;
+    color: white !important;
+}
+.btn-outline-red:hover{
+    border: solid 1px #A81E1E !important;
+    color: #A81E1E !important;
+    background-color: white;
+}
+.width-spaced{
+    width: 15%;
+}
