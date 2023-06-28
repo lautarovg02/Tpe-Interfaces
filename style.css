@@ -8,7 +8,7 @@ h1,h2,h3,.f-div{
 }
 
 header{
-    width: 97%;
+    width: 100%;
     margin: auto;
 }
 #imgLogo{
@@ -55,12 +55,9 @@ footer{
     background-color: #A81E1E;
     color: white;
 }
+
 .contact{
     margin: 1%;
-}
-
-.contact p{
-    
 }
 
 .f-div{
@@ -83,17 +80,11 @@ footer{
     display: flex;
 }
 
-.underline{
-    position: relative;
-}
-
-.section-main-news .underline::after {
-    content: "";
-    position: absolute;
-    bottom: -5px; 
-    left: 0;
-    width: 90%;
-    border-bottom: 2px solid #A81E1E ;
+.section-main-news, .section-news{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; 
 }
 
 .art-news-main h2 , .art-news  h3{
@@ -110,19 +101,11 @@ footer{
     margin: 5%;
 }
 
-.art-news-main button{
-    width: 40%;
+.art-news-main button, .art-news button {
+    width: 50%;
     margin-top: 8%;
     margin-left: 2%;
     border-radius: 2%;
-}
-
-.art-news button {
-    margin-top: 1%;
-    margin-left: 2%;
-    width: 40%;
-    border-radius: 1%;
-    
 }
 
 .nav-item{
@@ -133,8 +116,8 @@ footer{
     border: 1px solid #A0A0A0 ;
     padding: 1%;
     margin-top: 2%;
-    margin-bottom: 5%;
-    width: 97%;
+    margin-bottom: 3%;
+    width: 100%;
     display: flex;
 }
 
@@ -143,21 +126,26 @@ footer{
     margin-bottom: 5%;
     border: 1px solid #A0A0A0 ;
     padding: 1%;
-    margin: 1%;
+    margin-left: 1%;
     height: 350px;
     width: 100%;
     display: flex;
 }
 
 .img-art-news-main{
-    margin: 1%;
-    width: 30%;
+    max-width: 30%;
+    max-height: 30%;
+    width: auto;
+    height: auto;
+    /* margin: 1%;
+    width: 30%; */
 }
 
 .img-art-news{
-    width: 40%;
-    margin: 1%;
-
+    max-width: 50%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
 }
 
 .desc-art-news-main{
@@ -174,8 +162,16 @@ footer{
 }
 
 .navbar{
+    margin: 0;
     font-size:larger;
-    border: 3px solid black;
+}
+
+.navbar{
+    border-bottom: 3px solid #A0A0A0 ;
+    border-radius: 5px;
+}
+footer{
+    border-top: 3px solid #A0A0A0 ;
     border-radius: 5px;
 }
 
