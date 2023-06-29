@@ -87,7 +87,7 @@ footer{
     height: 60vh; 
 }
 
-.art-news-main h2 , .art-news  h3{
+.art-news-main h2 , .art-news  h3, .art-principle h3{
     color: #A81E1E;
 }
 
@@ -96,7 +96,7 @@ footer{
     height: 50px;
 }
 
-.art-news-main p, .art-news p{
+p{
     font-size: medium;
     margin: 5%;
 }
@@ -121,12 +121,23 @@ footer{
     display: flex;
 }
 
+.art-principle{
+    height: 30vh;
+    padding: 1px;
+    margin: 50px;
+    background-color: #D9D9D9;
+}
+
+.art-principle h3{
+    text-align: center;
+    text-decoration: underline;
+}
+
 .art-news{
-    margin-top: 2%;
-    margin-bottom: 5%;
+    /* margin-top: 2%;
+    margin-bottom: 5%; */
     border: 1px solid #A0A0A0 ;
     padding: 1%;
-    margin-left: 1%;
     height: 350px;
     width: 100%;
     display: flex;
@@ -161,6 +172,18 @@ footer{
     margin-left: 10%;
 }
 
+#art-about-us{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border: 1px solid #A0A0A0 ;
+}
+
+p::first-letter{
+    font-size: larger;
+    color: #A81E1E;
+}
+
+
 .navbar{
     margin: 0;
     font-size:larger;
@@ -182,4 +205,8 @@ input[type="search"]{
 
 .collapse{
     width: 45%;
+}
+
+@media only screen {
+    
 }
