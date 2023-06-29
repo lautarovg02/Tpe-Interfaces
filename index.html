@@ -37,7 +37,10 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Que desea buscar?..." aria-label="Buscar">
+                        <div class="d-flex search">
+                            <input class="form-control me-2" type="search" placeholder="Que desea buscar?..." aria-label="Buscar" id="search">
+                            <div id="ref"></div>
+                        </div>
                         <button class="btn btn-outline-white">Buscar</button>
                     </form>
                 </div>
@@ -62,28 +65,26 @@
             </article>
         </section>
 
-        <section >
-            <section class="section-news">
-                <article class="art-news">
-                    <img class="img-art-news" src="img/news/news2.jpg" alt="">
-                    <div class="desc-art-news">
-                        <h3 class="text-start  text-capitalize m-2">Tesorera de Cruz Roja Argentina</h3>
-                        <p>Es voluntaria de la organización desde hace 17 años. Será el segundo período
-                            de la presidente de la Filial Corrientes en el Consejo del mencionado organismo.
-                            El cargo nacional tendrá una duración de cuatro años.</p>
-                        <button class="btn btn-outline-red  text-uppercase" >Conoce mas</button>
-                    </div>
-                </article>
-                <article class="art-news">
-                    <img class="img-art-news" src="img/news/news3.jpeg" alt="">
-                    <div class="desc-art-news">
-                        <h3 class="text-start  text-capitalize m-2">!Cena anual a beneficio!</h3>
-                        <p>La Cruz Roja Argentina celebrará el 8 de mayo su cena anual a beneficio</p>
-                        <button class="btn btn-outline-red text-uppercase" >Conoce mas</button>
-                    </div>
-                </article>
-            </section>
-           <section class="section-news">
+        
+        <section class="section-news">
+            <article class="art-news">
+                <img class="img-art-news" src="img/news/news2.jpg" alt="">
+                <div class="desc-art-news">
+                    <h3 class="text-start  text-capitalize m-2">Tesorera de Cruz Roja Argentina</h3>
+                    <p>Es voluntaria de la organización desde hace 17 años. Será el segundo período
+                        de la presidente de la Filial Corrientes en el Consejo del mencionado organismo.
+                        El cargo nacional tendrá una duración de cuatro años.</p>
+                    <button class="btn btn-outline-red  text-uppercase" >Conoce mas</button>
+                </div>
+            </article>
+            <article class="art-news">
+                <img class="img-art-news" src="img/news/news3.jpeg" alt="">
+                <div class="desc-art-news">
+                    <h3 class="text-start  text-capitalize m-2">!Cena anual a beneficio!</h3>
+                    <p>La Cruz Roja Argentina celebrará el 8 de mayo su cena anual a beneficio</p>
+                    <button class="btn btn-outline-red text-uppercase" >Conoce mas</button>
+                </div>
+            </article>
             <article class="art-news">
                 <img class="img-art-news" src="img/news/news4.jpeg" alt="">
                 <div class="desc-art-news">
@@ -100,10 +101,7 @@
                     <button class="btn btn-outline-red text-uppercase" >Conoce mas</button>
                 </div>
             </article>
-           </section>
-
         </section>
-        
     </div>
 
 
@@ -127,4 +125,5 @@
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="app.js"></script>
 </html>
