@@ -55,21 +55,12 @@ footer{
     color: white;
 }
 
-
-
-
-
-
-
 .section-news{
-    display: flex;
-    justify-content:space-between!important;
-    flex-wrap: wrap;
-    align-content: space-around ;
+    
     width: 100%;
 }
 
-.section-main-news, .section-news{  
+.section-main-news{  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,11 +81,13 @@ p{
 }
 
 .art-news-main button, .art-news button {
-    width: 50%;
-    margin-top: 8%;
+    width: 100%;
+    margin-top: 3px;
     margin-left: 2%;
     border-radius: 2%;
 }
+
+.art-n
 
 .nav-item{
     margin-left: 10% ;
@@ -129,10 +122,19 @@ p{
     margin-bottom: 5%; */
     border: 1px solid #A0A0A0 ;
     padding: 1%;
-    height: 350px;
-    width: 49%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 100%;
     margin-bottom: 10px;
     display: flex;
+}
+
+.art-news p{
+    font-size: small;
+}
+
+.art-news h3{
+    font-size:larger;
 }
 
 .img-art-news-main{
@@ -146,7 +148,8 @@ p{
 
 .img-art-news{
     max-width: 50%;
-    max-height: 100%;
+    margin-top: 30px;
+    max-height: 200px;
     width: auto;
     height: auto;
 }
@@ -233,8 +236,37 @@ input[type="search"]{
         align-items: center;
     }
 
+    .img-art-news{
+        max-width: 50%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+    .art-news-main button, .art-news button {
+        width: 50%;
+    }
+    .art-news-main button, .art-news button {
+        margin-top: 8%;
+        margin-left: 2%;
+        border-radius: 2%;
+    }
+
+    .f-div{
+        display: flex;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .contact{
+        width: auto;
+    }
+
     header{
         margin: auto;
+    }
+
+    .art-news p{
+        font-size: medium;
     }
 
     #icons{
@@ -255,5 +287,22 @@ input[type="search"]{
         margin: 50px;
         width: 400px;
         height: 50vh;
+    }
+
+    .art-news{
+        /* margin-top: 2%;
+        margin-bottom: 5%; */
+        height: 350px;
+        width: 49%;
+        margin-bottom: 10px;
+        display: flex;
+    }
+
+    .section-news{
+        display: flex;
+        justify-content:space-between!important;
+        flex-wrap: wrap;
+        align-content: space-around ;
+        width: 100%;
     }
 }
