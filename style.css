@@ -216,3 +216,15 @@ input[type="search"]{
 .collapse{
     width: 45%;
 }
+
+@media  (min-width: 768px){
+
+    .section-principle{
+        display: flex;
+    }
+
+    .art-principle{
+        width: 400px;
+        height: 50vh;
+    }
+}
