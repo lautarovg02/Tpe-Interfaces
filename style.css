@@ -59,6 +59,9 @@ footer{
 .contact{
     margin: 1%;
 }
+.contact ul{
+    list-style: none;
+}
 
 .f-div{
     display: flex;
