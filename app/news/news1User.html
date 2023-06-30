@@ -30,16 +30,20 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
                     <ul class="navbar-nav justify-content-evenly width-spaced">
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link active " aria-current="page" href="/index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active " aria-current="page" href="/app/about.html">About</a>
                         </li>
-                        <li class="nav-item" id="login-nav">
-                            <a class="nav-link active selected" aria-current="page" href="/app/login.html">Login</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Logaut</a>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a class="nav-link active selected" aria-current="page"
+                                href="/app/news/news1.html">Noticia</a>
+                        </li>
+
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Que desea buscar?..."
@@ -54,43 +58,66 @@
 
 
     <div class="container">
-        <section class="container-form">
-            <div class="img-form">
-                <img src="/img/form.jpeg" alt="">
-            </div>
-            <div class="div-form">
-                <form id="form-register">
-                    <h1 class="m-3 text-center text-capitalize">Registrarse</h1>
-                    <div class="box-input">
-                        <label for="">Nombre:</label>
-                        <input required type="text" id="username-register" id="">
-                    </div>
-                    <div class="box-input">
-                        <label for="">E-mail:</label>
-                        <input  required type="email" id="email-register" id="">
-                    </div>
-                    <div class="box-input dir-column">
-                        <label for="">Contraseña:</label>
-                        <span class="alert-span">¡Debe tener 8 caracteres como minimo!
-                        </span>
-                        <input required  type="password" min="8" id="password-register" id="">
-                    </div>
-                    <div class="box-input dir-column">
-                        <label for="">Confirmar Contraseña:</label>
-                        <span class="alert-span" id="msg-password">
-                        </span>
-                        <input required  type="password" min="8" id="confirm-register" >
-                    </div>
-                    <div class="box-input ">
-                        <button class="btn btn-outline-dark" id="btn-form-register" >Registrarse</button>
-                    </div>
+        <section class="body-new">
+            <h1 class=" text-center m-4">Dia de la Cruz Roja Argentina</h1>
+            <p class=" m-3">El 10 de junio se conmemora el <span class="fw-bold">Día de la Cruz Roja Argentina
+                </span>.En 1879 el gobierno argentino, a cargo de Nicolás Avellaneda, ratifico el <span
+                    class=" fw-bold">1º Convenio de Ginebra</span>. A partir de este antecedente se elige este día para
+                celebrar. La <span class="fw-bold">Cruz Roja Argentina</span> es una asociación civil, humanitaria y
+                voluntaria que
+                tiene presencia en todo el territorio nacional y a nivel internacional es la red humanitaria más grande
+                del mundo.</p>
+            <p class=" m-3"></p>
+            <article class="art-body-news-img">
+                <img class="img-body-news" src="/img/news/body_news_1.jpeg" alt="">
+                <div class="img-coment">
+                    <p class="text-sm-center">"La Cruz Roja Argentina es una asociación civil, humanitaria y voluntaria
+                        que tiene presencia en todo el territorio nacional."</p>
+                </div>
+            </article>
 
-                    <div id="div-alert" class="alert alert-danger text-capitalize box-input disguise" role="alert">
-                    </div>
+            <p class=" m-3"> Esta organización establece diversos valores por la <span class="fw-bold">Federación
+                    Internacional de la Cruz Roja y de la
+                    Media Luna Roja</span> son las personas, la integridad, la diversidad, el liderazgo y la innovación.
+            </p>
+            <p class=" m-3">Teniendo en cuenta el <span class="fw-bold">respeto</span>, la <span
+                    class="fw-bold">justicia</span> y la <span class="fw-bold">responsabilidad</span> como los valores
+                centrales de la Cruz Roja Argentina.</p>
+            <h3 class="text-center m-5 fst-italic">¿Cómo colaborar con la Cruz Roja Argentina?
+            </h3>
+            <p class=" m-3">Cualquier persona que quiera <span class="fw-bold">colaborar con la Cruz Roja
+                    Argentina</span> debe ingresar al sitio oficial y allí podrá observar un menú de opciones para hacer
+                donaciones.Gracias a estas donaciones la Cruz Roja realiza diversas campañas en diversos lugares del
+                país.
+            </p>
 
+            <div class="section-coment">
+                <h1 class="text-center m-lg-5">Seccion De Comentarios</h1>
+
+                <form id="comment-form">
+                    <div class="box-input">
+                        <label for="">Comentario:</label>
+                        <textarea id="comment-input" placeholder="Escribe tu comentario" required></textarea>
+                        <button id="send-coment" class="btn btn-outline-dark">Enviar</button>
+                    </div>
                 </form>
             </div>
-        </section>
+            <div id="coments">
+                <div class="card">
+                    <p>Agustin Urrutia</p>
+                    <div class="card-body">
+                        Me encantaria colaborar con ustedes.
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+
+    </section>
+
+
     </div>
 
 
