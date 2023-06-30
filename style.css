@@ -293,6 +293,7 @@ input[type="search"] {
 }
 
 .body-new h1 {
+    font-size: 45px;
     font-family: 'Playfair Display', serif;
 }
 
@@ -421,14 +422,64 @@ input[type="search"] {
 
 }
 
+
+.coments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#title-comment{
+    margin: 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.coments .card{
+    /* border: 0px solid #A0A0A0; */
+    width: 30vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1%;
+}
+
+.coments .card-body{
+    color: black;
+    font-family: 'Nunito Sans'; 
+    border-top: 1px solid rgba(0,0,0,.125)
+}
+
+#font-play{
+    color: #A81E1E;
+    font-family: 'Playfair Display', serif;
+}
+
 @media (min-width: 768px) {
+    .body-new h1 {
+        font-size: 80px;
+    }
+    
+    .coments .card{
+        /* border: 0px solid #A0A0A0; */
+        width: 70vh;
+    }
 
     
-    .section-coment{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
+
+    .coments{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:baseline;
+    }
+
+
+    #title-comment{
+        margin: 30px;
+        text-align: center;
+        font-size: 35px;
     }
 
     .comment-form{
