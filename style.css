@@ -195,6 +195,20 @@ p {
     justify-content: space-between;
 }
 
+.direc{
+    margin-right: 10%;
+}
+
+#imgUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.img-account{
+    width: 30px;
+}
+
 .desc-art-news {
     width: 70%;
     display: flex;
@@ -202,9 +216,7 @@ p {
     justify-content: space-between;
 }
 
-.d-flex {
-    margin-left: 10%;
-}
+
 
 #art-about-us {
     margin-top: 2%;

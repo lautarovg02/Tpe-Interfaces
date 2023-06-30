@@ -18,32 +18,35 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #A81E1E;">
+        <nav class="navbar navbar-expand-lg navbar-dark "style="background-color: #A81E1E;">
+            
             <div class="container-fluid">
                 <div id="backLogo">
                     <img src="/img/icons/cruzRojaLogo.png" id="imgLogo" alt="">
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
                     <ul class="navbar-nav justify-content-evenly width-spaced direc">
                         <li class="nav-item">
-                            <a class="nav-link active " aria-current="page" href="/index.html">Inicio</a>
+                            <a class="nav-link active  " aria-current="page" href="/index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active " aria-current="page" href="about.html">About</a>
+                            <a class="nav-link active" aria-current="page" href="/app/about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active selected" aria-current="page" id="login" href="#">Login</a>
+                            <a class="nav-link active" aria-current="page" id="login" href="/app/login.html">Logaut</a>
                         </li>
-                        
+                        <li class="nav-item ">
+                            <a class="nav-link active selected" aria-current="page" id="name-user" href="/index.html"></a>
+                        </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Que desea buscar?..."
-                            aria-label="Buscar">
+                        <div class="d-flex search">
+                            <input class="form-control me-2" type="search" placeholder="Que desea buscar?..." aria-label="Buscar" id="search">
+                            <div id="ref"></div>
+                        </div>
                         <button class="btn btn-outline-white">Buscar</button>
                     </form>
                 </div>
@@ -52,37 +55,23 @@
     </header>
 
 
-    <div class="img-form">
-        <img src="../img/form.png" alt="">
-    </div>
+
     <div class="container">
-        <section class="container-form">
-            
-            <div class="div-form">
-                <form id="form-login" >
-                    <h1 class="m-3 text-center text-capitalize">Iniciar Sesion</h1>
-                    <div class="box-input">
-                        <label for="">E-mail:</label>
-                        <input type="email" name="" id="email-login">
-                    </div>
-                    <div class="box-input">
-                        <label for="">Contraseña:</label>
-                        <input type="password" name="" id="password-login">
-                    </div>
-                    <div class="box-input">
-                        <button class="btn btn-outline-dark" id="btn-login">Iniciar Sesion</button>
-                    </div>
-                    <div class="box-input">
-                        <p>Aun no tienes una Cuenta?. <br>
-                            <a class="text-capitalize fs-6" href="/app/register.html">Registrate</a>, es totalmente gratis.
-                        </p>
-                        <p></p>
-                    </div>
-                    <div id="div-alert-loggin" class="alert alert-danger text-capitalize box-input disguise" role="alert">
-                    </div>
-                </form>
-            </div>
-        </section>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Contraseña</th>
+                <th scope="col">rol</th>
+                <th scope="col">Email</th>
+                <th scope="col">-</th>
+              </tr>
+            </thead>
+            <tbody id="table">
+              
+            </tbody>
+        </table>
     </div>
 
 
@@ -107,9 +96,9 @@
         </div>
     </footer>
 </body>
-<script src="/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+<script src="tabla.js"></script>
 
 </html>

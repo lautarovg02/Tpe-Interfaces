@@ -25,7 +25,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav justify-content-evenly width-spaced">
+                    <ul class="navbar-nav justify-content-evenly width-spaced direc">
                         <li class="nav-item">
                             <a class="nav-link active selected " aria-current="page" href="/index.html">Inicio</a>
                         </li>
@@ -41,8 +41,12 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <div class="d-flex search">
-                            <input class="form-control me-2" type="search" placeholder="Que desea buscar?..." aria-label="Buscar" id="search">
-                            <div id="ref"></div>
+                            <input autocomplete="off" class="form-control me-2" type="search" list="news" placeholder="Que desea buscar?..." aria-label="Buscar" id="search">
+                            <datalist id="news">
+                                <option value="new1"></option>
+                                <option value="new2"></option>
+                                <option value="new3"></option>
+                            </datalist>
                         </div>
                         <button class="btn btn-outline-white">Buscar</button>
                     </form>
@@ -63,7 +67,7 @@
                 <div class="desc-art-news-main">
                     <h3 class="text-start  text-capitalize m-2">Dia de la Cruz Roja Argentina</h3>
                     <p>¿Porque se celebra el 10 de junio?.</p>
-                    <a href="/app/news/news1.html"></a><button class="btn btn-outline-red text-uppercase" >Conoce mas</button></a>
+                    <a href="/app/news/news1.html"><button class="btn btn-outline-red text-uppercase" >Conoce mas</button></a>
                 </div>
             </article>
         </section>

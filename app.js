@@ -10,6 +10,7 @@ let loginContainer = document.getElementById("login-container");
 let logoutContainer = document.getElementById("logout-container");
 let loginForm = document.getElementById("login-form");
 let loginOn;
+let userName = "";
 
 let btnSendComent = document.getElementById("send-coment");
 if(btnSendComent != null){
@@ -165,22 +166,17 @@ function login(event) {
     let divAlert = document.getElementById("div-alert-loggin");
     divAlert.classList.add("disguise");
 
-    if(emailLoggin.value != "" && passwordLoggin != ""){
+    if(emailLoggin.value != "" || passwordLoggin != ""){
         const email = emailLoggin.value;
         const password = passwordLoggin.value;
         const usuario = registeredUsers.find(
             (usuario) => usuario.email === email && usuario.password === password
         );
-
-        if (usuario) {            
-             currentUser = usuario.username;
-            if(usuario.rol == "admin"){
-
-            }
-            else{
-                window.location.href = "/app/showUsuario.html";
-            }
+        if (usuario.rol === "admin") {            
+            currentUser = usuario.username;
+            window.location.href = "/app/showAdmin.html";
         } else {
+            window.location.href = "/app/showUser.html";
             divAlert.classList.remove("disguise");
             divAlert.textContent = "Usuario o contraseña incorrectos. Por favor, intenta nuevamente.";
         }
