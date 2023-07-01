@@ -43,7 +43,7 @@ header {
     background-color: #A81E1E !important;
 }
 
-.btns-delete{
+.btns-delete {
     margin-right: 0px;
 }
 
@@ -193,7 +193,7 @@ p {
     font-size: larger;
 }
 
-.name-user{
+.name-user {
     padding-left: 0px !important;
     display: flex;
     align-items: flex-end;
@@ -283,6 +283,16 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+
+.nav-item a:hover {
+    transform: scale(1.1);
+}
+
+button:hover {
+    position: relative;
+    top: -5px;
 }
 
 .contact {
@@ -437,6 +447,24 @@ input[type="search"] {
     flex-direction: column;
 }
 
+.card, .art-news-main, .art-news{
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover, .art-news-main:hover, .art-news:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.art-principle:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px #A81E1E;
+}
+
+#art-about-us p {
+    font-size: larger;
+}
+
 .navbar-nav li {
     margin-left: 15px;
 }
@@ -520,7 +548,7 @@ input[type="search"] {
     border-top: 1px solid rgba(0, 0, 0, .125)
 }
 
-.btns-table{
+.btns-table {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -539,7 +567,7 @@ input[type="search"] {
     flex-direction: column;
 }
 
-.limit-box{
+.limit-box {
     max-width: 90px;
     overflow-wrap: break-word;
 }
@@ -550,27 +578,27 @@ input[type="search"] {
     #section-adm h1 {
         font-size: 80px;
     }
-    
-    .btns-delete{
+
+    .btns-delete {
         margin-right: 10px;
     }
 
-    .btns-table{
+    .btns-table {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
 
-    .coments .card{
+    .coments .card {
         /* border: 0px solid #A0A0A0; */
         width: 100%;
     }
 
-    .footer-heigth{
+    .footer-heigth {
         height: 100vh;
     }
-    
+
 
 
     /* .coments{
@@ -611,7 +639,8 @@ input[type="search"] {
         width: 70%;
     }
 
-    .div-form button, .coment-input button {
+    .div-form button,
+    .coment-input button {
         width: 40%;
         margin: 10px;
     }
@@ -717,7 +746,7 @@ input[type="search"] {
         font-size: x-large;
     }
 
-    
+
 
     .contact {
         width: auto;
