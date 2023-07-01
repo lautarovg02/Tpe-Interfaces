@@ -226,6 +226,10 @@ p {
     justify-content: space-between;
 }
 
+#phrasers{
+    text-align: center;
+    font-style: italic;
+}
 .desc-art-news-main h3{
     color: #A81E1E;
 }
