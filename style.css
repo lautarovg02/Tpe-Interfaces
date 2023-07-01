@@ -582,6 +582,8 @@ input[type="search"] {
 }
 
 .art-body-news-img {
+    margin-bottom: 40px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -708,8 +710,6 @@ input[type="search"] {
     }
 
     .img-body-news {
-        padding: 20px;
-
         justify-content: center;
     }
 
