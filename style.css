@@ -337,7 +337,7 @@ input[type="search"] {
     margin: 20px;
     font-size: medium;
 }
-
+.container h1,
 .body-new h1,
 #section-adm h1 {
     font-size: 45px;
@@ -573,10 +573,14 @@ input[type="search"] {
 }
 
 @media (min-width: 768px) {
-
+   
     .body-new h1,
     #section-adm h1 {
         font-size: 80px;
+    }
+
+    .container h1{
+        font-size: 60px;
     }
 
     .btns-delete {

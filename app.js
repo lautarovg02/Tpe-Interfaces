@@ -58,7 +58,7 @@ const msgPassword = document.getElementById("msg-password");
 // Arreglo para almacenar usuarios registrados
 const registeredUsers = [
     {'username': "lautaro02",
-     'password': "lautaro",
+     'password': "bocademivida",
      'rol': "user",
      'email': "lautaro@gmail.com"
     },
