@@ -3,6 +3,10 @@ body {
     font-size: 20px;
 }
 
+tr{
+    border-color: black !important;
+}
+
 h1,
 h2,
 h3,
@@ -23,8 +27,17 @@ header {
     border-radius: 20px;
 }
 
+.thead{
+    background-color: #A81E1E !important;
+    color: white;
+}
+
 #bg-red {
     background-color: #A81E1E !important;
+}
+
+.btns-delete{
+    margin-right: 10px;
 }
 
 .btn-outline-white {
@@ -145,6 +158,9 @@ p {
     background-color: #D9D9D9;
 }
 
+.align-center{
+    text-align: center;
+}
 
 .art-principle h3 {
     text-align: center;
