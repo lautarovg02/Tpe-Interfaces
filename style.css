@@ -217,7 +217,6 @@ p {
 
 #imgUser{
     display: flex;
-    flex-direction: column;
     justify-content: start;
     align-items: center;
 }
@@ -471,6 +470,12 @@ input[type="search"] {
     color: #A81E1E;
     font-family: 'Playfair Display', serif;
 }
+.art-body-news-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 @media (min-width: 768px) {
     .body-new h1 {
@@ -484,12 +489,12 @@ input[type="search"] {
 
     
 
-    .coments{
+    /* .coments{
         display: flex;
         flex-direction: column;
         justify-content:center;
         align-items:baseline;
-    }
+    } */
 
 
     #title-comment{
@@ -502,6 +507,12 @@ input[type="search"] {
         display: flex;
         justify-content: center;
     
+    }
+
+    #form-login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .div-form {
@@ -520,12 +531,15 @@ input[type="search"] {
         width: 40%;
         margin: 10px;
     }
-
+    .alert{
+        text-align: center;
+        font-size: 15px;
+        width: 60%;
+    }
     .alert-span{
         margin: 0;
     }
     .box-input{
-        align-items: center;
         width: 500px;
     }
     .div-form button , .box-input{
@@ -551,13 +565,6 @@ input[type="search"] {
 
     .body-new {
         margin: 80px;
-    }
-
-    .art-body-news-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
 
     .body-new p {

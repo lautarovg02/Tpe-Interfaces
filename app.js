@@ -164,20 +164,25 @@ function login(event) {
     let divAlert = document.getElementById("div-alert-loggin");
     divAlert.classList.add("disguise");
 
-    if(emailLoggin.value != "" || passwordLoggin != ""){
+    if(emailLoggin.value != "" && passwordLoggin != ""){
         const email = emailLoggin.value;
         const password = passwordLoggin.value;
         const usuario = registeredUsers.find(
             (usuario) => usuario.email === email && usuario.password === password
         );
-        if (usuario.rol === "admin") {            
-            currentUser = usuario.username;
-            window.location.href = "/app/showAdmin.html";
-        } else {
-            window.location.href = "/app/showUser.html";
+        if(usuario){
+            if (usuario.rol === "admin") {            
+                currentUser = usuario.username;
+                window.location.href = "/app/showAdmin.html";
+            } else {
+                window.location.href = "/app/showUser.html";
+                
+            }
+        }else{
             divAlert.classList.remove("disguise");
             divAlert.textContent = "Usuario o contraseña incorrectos. Por favor, intenta nuevamente.";
         }
+        
     }else{
         divAlert.classList.remove("disguise");
         divAlert.textContent = "Complete todos los campos";
