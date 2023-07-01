@@ -22,6 +22,12 @@ header {
     width: 200px;
 }
 
+#imgUser .nav-link {
+    color: white;
+    
+}
+
+
 #backLogo {
     background-color: white;
     border-radius: 20px;
@@ -30,6 +36,7 @@ header {
 .thead{
     background-color: #A81E1E !important;
     color: white;
+    text-decoration: none;
 }
 
 #bg-red {
@@ -216,6 +223,7 @@ p {
 }
 
 #imgUser{
+    margin-right: 16px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -278,6 +286,10 @@ footer {
     list-style: none;
 }
 
+#section-table{
+    margin: 40px;
+}
+
 #icons {
     display: flex;
     justify-content: space-around;
@@ -307,7 +319,7 @@ input[type="search"] {
     font-size: medium;
 }
 
-.body-new h1 {
+.body-new h1 , #section-adm h1{
     font-size: 45px;
     font-family: 'Playfair Display', serif;
 }
@@ -478,7 +490,7 @@ input[type="search"] {
 }
 
 @media (min-width: 768px) {
-    .body-new h1 {
+    .body-new h1,  #section-adm h1 {
         font-size: 80px;
     }
     
