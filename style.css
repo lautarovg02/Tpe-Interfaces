@@ -81,7 +81,6 @@ header {
 }
 
 .btn-outline-red:hover {
-    border: solid 1px white !important;
     color: white !important;
     background-color: #A81E1E;
     background-color: #A81E1E;
@@ -196,6 +195,8 @@ p {
 
 .name-user{
     padding-left: 0px !important;
+    display: flex;
+    align-items: flex-end;
 }
 
 .img-art-news-main {
@@ -265,16 +266,15 @@ p {
 .navbar {
     margin: 0;
     font-size: larger;
-}
-
-.navbar {
     border-bottom: 3px solid #A0A0A0;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px
 }
 
 footer {
     border-top: 3px solid #A0A0A0;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .f-div {
@@ -485,7 +485,7 @@ input[type="search"] {
 .section-coment {
     margin-top: 50px;
     display: flex;
-    width: 99%;
+    /* width: 99%; */
     flex-direction: column;
     text-align: center;
     border: 2px solid black;
@@ -508,7 +508,7 @@ input[type="search"] {
 
 .coments .card {
     /* border: 0px solid #A0A0A0; */
-    width: 30vh;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 1%;
@@ -564,7 +564,7 @@ input[type="search"] {
 
     .coments .card{
         /* border: 0px solid #A0A0A0; */
-        width: 150vh;
+        width: 100%;
     }
 
     .footer-heigth{
