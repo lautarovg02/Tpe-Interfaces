@@ -27,7 +27,7 @@ function refreshTable(){
                             <td>${element.username}</td>
                             <td>${element.password}</td>
                             <td>${element.rol}</td>
-                            <td>${element.email}</td>
+                            <td class="limit-box">${element.email}</td>
                             <td class="btns-table">
                                 <button id="${element.id}" class="btn btn-outline-red btns-delete">Eliminar</button>
                                 <button id="${element.id}" class="btn btn-outline-success">Editar</button>
