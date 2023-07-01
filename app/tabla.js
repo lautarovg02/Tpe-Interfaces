@@ -1,5 +1,5 @@
 
-const registeredUsers = [
+let registeredUsers = [
     {'id': '1',
      'username': "lautaro02",
      'password': "lautaro",
@@ -14,12 +14,13 @@ const registeredUsers = [
     },
 ];
 
-
-let btns_delete = document.querySelectorAll('.btns-delete');
+let btns_delete = [];
+btns_delete = document.getElementsByClassName('btns-delete');
 
 let table = document.getElementById('table');
 
 function refreshTable(){
+    table.innerHTML = '';
     registeredUsers.forEach(element => {
     table.innerHTML += `<tr>
                             <th scope="row">${element.id}</th>
@@ -43,9 +44,8 @@ function refreshTable(){
 }
 
 function deleteUser(id) {
-    btns_delete.filter(function(e){
-        return e != id;
-    });
+    console.log(btns_delete);
+    registeredUsers = registeredUsers.filter(user=>user.id !== id)
     refreshTable();
 }
 
