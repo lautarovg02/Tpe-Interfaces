@@ -326,6 +326,7 @@ input[type="search"] {
 
 .art-principle,
 #art-about-us {
+    transition: all 0.3s;
     width: 100%;
 }
 
@@ -451,17 +452,24 @@ input[type="search"] {
     transition: box-shadow 0.3s ease;
 }
 
+.card, .art-news-main, .art-news{
+    transition: all 0.3s;
+}
+
 .card:hover, .art-news-main:hover, .art-news:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
+    transition: all 0.3s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .art-principle:hover{
     transform: translateY(-5px);
-    box-shadow: 0 0 10px #A81E1E;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 #art-about-us p {
+    padding-top: 10px;
     font-size: larger;
 }
 
@@ -777,7 +785,7 @@ input[type="search"] {
     .art-principle {
         margin: 50px;
         width: 400px;
-        height: 50vh;
+        height: 30vh;
     }
 
     .art-news {
