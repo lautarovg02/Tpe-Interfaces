@@ -78,16 +78,14 @@ const comentsOfUsers = [
 function addComent(e) {
     e.preventDefault();
     console.log("entre");
-    let sectionComents = document.getElementById("coments");
+    let sectionComents = document.querySelector(".coments");
     let coment =document.getElementById("comment-input").value;
     if(coment != ""){
         sectionComents.innerHTML += ` 
-        <div id="coments">
-            <div class="card">
-                <p>Lau</p>
-                <div class="card-body">
-                    ${coment}
-                </div>
+        <div class="card">
+            <p>Usuario: <span id="font-play">Lautaro</span></p>
+            <div class="card-body">
+               ${coment}
             </div>
         </div>`;
     } 
