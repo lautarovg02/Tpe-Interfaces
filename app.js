@@ -79,16 +79,17 @@ function addComent(e) {
     e.preventDefault();
     console.log("entre");
     let sectionComents = document.querySelector(".coments");
-    let coment =document.getElementById("comment-input").value;
-    if(coment != ""){
+    let coment =document.getElementById("comment-input");
+    if(coment.value != ""){
         sectionComents.innerHTML += ` 
         <div class="card">
             <p>Usuario: <span id="font-play">Lautaro</span></p>
             <div class="card-body">
-               ${coment}
+               ${coment.value}
             </div>
         </div>`;
-    } 
+        coment.value = "";
+    }
 
 }
 
